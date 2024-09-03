@@ -1,9 +1,13 @@
-package com.sql_engine;
+
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import com.sql_engine.GroupByMaxStrategy;
+import com.sql_engine.GroupBySumStrategy;
+import com.sql_engine.SQLEngine;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,11 +18,11 @@ public class Main {
         rows.add(row1);
         
         Map<String, Integer> row2 = new HashMap<>();
-        row2.put("Ajay", 200);
+        row2.put("Ajay", 300);
         rows.add(row2);
         
         Map<String, Integer> row3 = new HashMap<>();
-        row3.put("Nikhil", 500);
+        row3.put("Nikhil", 5000);
         rows.add(row3);
         
         Map<String, Integer> row4 = new HashMap<>();
