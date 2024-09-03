@@ -19,3 +19,22 @@ public class SQLEngine {
         groupByStrategy.groupBy(rows);
     }
 }
+// Next Problem
+//Given a set of rows implement a basic SQL engine in java to support groupBy and Summation, Max //aggregation
+/*Name Amount
+Ajay 100
+Ajay 200
+Nikhil 500
+Nikhil 25
+    
+
+groupby - Name, Sum(Amount) 
+    
+Ajay - 300
+Nikhil - 525
+    
+
+groupby - Name, Max(Amount) 
+    
+Ajay - 200
+Nikhil - 500*/ 

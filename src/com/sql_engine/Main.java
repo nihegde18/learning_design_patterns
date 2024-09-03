@@ -23,12 +23,16 @@ public class Main {
         row4.put("Nikhil", 25);
         rows.add(row4);
         
-        // Summation
         SQLEngine sqlEngine = new SQLEngine(new GroupBySumStrategy());
+        
+        System.out.println("Group By Sum:");
         sqlEngine.groupBy(rows);
         
-        // Max Aggregation
+        System.out.println("----------");
+        
         sqlEngine.setGroupByStrategy(new GroupByMaxStrategy());
+        
+        System.out.println("Group By Max:");
         sqlEngine.groupBy(rows);
     }
 }
